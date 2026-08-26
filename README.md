@@ -36,6 +36,8 @@ This prototype provides:
 4. Run:
    `python app.py`
 5. Open `http://127.0.0.1:5000`
+## Alternative Way to Open:
+click the link : https://dhaniti-education-leading-dashboard.onrender.com/
 
 The SQLite database is created automatically on first run and seeded from `data/`.
 
