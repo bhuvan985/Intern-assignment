@@ -1,0 +1,19 @@
+field,description,example
+application_id,Unique synthetic application identifier,EDU1001
+student_name,Synthetic student name; not real PII,Aarav Sharma
+age,Student age in years,22
+student_state,Synthetic student state,Telangana
+institution_id,Institution master identifier,INS001
+institution_name,Institution name from synthetic master,Aurora Institute of Technology
+course_id,Course master identifier,CRS001
+course_name,Course name,MBA
+course_domain,Broad course domain,Management
+course_fee_inr,Synthetic course fee in INR,850000
+loan_amount_requested_inr,Synthetic requested loan amount in INR,600000
+parent_monthly_income_inr,Synthetic parent/guardian monthly income in INR,75000
+existing_monthly_obligations_inr,Synthetic existing monthly obligations in INR,12000
+credit_score,Synthetic credit score; one value is intentionally missing,742
+employment_type,Synthetic income/employment category,Salaried
+application_date,Application date,2026-07-14
+application_status,Current synthetic application status,Under Review
+application_channel,Synthetic acquisition/application channel,Institution Referral

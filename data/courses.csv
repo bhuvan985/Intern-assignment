@@ -1,0 +1,11 @@
+course_id,course_name,domain,typical_fee_inr,duration_months
+CRS001,MBA,Management,850000,24
+CRS002,MCA,Computer Applications,650000,24
+CRS003,B.Tech,Engineering,900000,48
+CRS004,M.Tech,Engineering,700000,24
+CRS005,BBA,Management,500000,36
+CRS006,BCA,Computer Applications,550000,36
+CRS007,MS Data Science,Data Science,950000,24
+CRS008,PG Diploma AI,Data Science,450000,18
+CRS009,MBBS,Medical,1800000,60
+CRS010,M.Pharm,Medical,800000,24

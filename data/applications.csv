@@ -1,0 +1,151 @@
+application_id,student_name,age,student_state,institution_id,institution_name,course_id,course_name,course_domain,course_fee_inr,loan_amount_requested_inr,parent_monthly_income_inr,existing_monthly_obligations_inr,credit_score,employment_type,application_date,application_status,application_channel
+EDU1001,Ishita Nair,21,Tamil Nadu,INS010,Horizon University,CRS003,B.Tech,Engineering,928265,441283,90000,16359,639.0,Self-Employed,2026-06-15,Submitted,Institution Referral
+EDU1002,Meghana Reddy,19,Telangana,INS010,Horizon University,CRS010,M.Pharm,Medical,772621,677587,180000,46043,660.0,Salaried,2026-08-09,Submitted,Website
+EDU1003,Aarav Kulkarni,19,Tamil Nadu,INS009,Pioneer Business School,CRS003,B.Tech,Engineering,804370,712923,90000,21516,712.0,Pensioner,2026-06-30,Approved,Website
+EDU1004,Tejas Sharma,21,Karnataka,INS007,Summit University,CRS001,MBA,Management,861653,502622,55000,8688,697.0,Pensioner,2026-07-28,Approved,Partner Referral
+EDU1005,Sneha Singh,23,Andhra Pradesh,INS007,Summit University,CRS001,MBA,Management,747445,357728,65000,17834,771.0,Salaried,2026-07-06,Under Review,Counsellor
+EDU1006,Lakshmi Pillai,22,Maharashtra,INS008,Greenfield Institute,CRS004,M.Tech,Engineering,649700,324785,65000,11110,709.0,Salaried,2026-06-13,Approved,Counsellor
+EDU1007,Yash Mishra,26,Andhra Pradesh,INS001,Aurora Institute of Technology,CRS006,BCA,Computer Applications,572063,481767,110000,31872,775.0,Business,2026-08-08,Submitted,Campus Drive
+EDU1008,Shreya Rao,20,Telangana,INS008,Greenfield Institute,CRS001,MBA,Management,861937,656447,0,7639,656.0,Self-Employed,2026-07-17,Rejected,Partner Referral
+EDU1009,Vamshi Kumar,19,Delhi,INS008,Greenfield Institute,CRS003,B.Tech,Engineering,904336,427900,55000,9053,820.0,Business,2026-06-11,Approved,Counsellor
+EDU1010,Lakshmi Iyer,22,Maharashtra,INS010,Horizon University,CRS010,M.Pharm,Medical,819299,515724,110000,23128,671.0,Salaried,2026-07-17,Under Review,Campus Drive
+EDU1011,Harsha Mehta,20,Rajasthan,INS001,Aurora Institute of Technology,CRS008,PG Diploma AI,Data Science,444835,303817,110000,30089,740.0,Pensioner,2026-06-22,Under Review,Partner Referral
+EDU1012,Keerthi Reddy,23,Tamil Nadu,INS005,Eastern Tech University,CRS006,BCA,Computer Applications,588425,412622,140000,15717,660.0,Salaried,2026-08-11,Under Review,Partner Referral
+EDU1013,Diya Chowdhury,22,Kerala,INS007,Summit University,CRS008,PG Diploma AI,Data Science,470408,417792,55000,9270,689.0,Self-Employed,2026-07-22,Under Review,Counsellor
+EDU1014,Sai Naidu,29,Karnataka,INS006,Metro College of Engineering,CRS002,MCA,Computer Applications,549402,270390,65000,7457,642.0,Business,2026-07-21,Under Review,Website
+EDU1015,Pranav Verma,18,Delhi,INS003,Riverdale University,CRS008,PG Diploma AI,Data Science,411447,359278,180000,29182,731.0,Pensioner,2026-07-02,Under Review,Partner Referral
+EDU1016,Bhavya Menon,20,Rajasthan,INS006,Metro College of Engineering,CRS003,B.Tech,Engineering,951408,587693,65000,18925,625.0,Salaried,2026-06-29,Under Review,Institution Referral
+EDU1017,Charan Joshi,18,Andhra Pradesh,INS004,Deccan Institute of Management,CRS003,B.Tech,Engineering,947289,461062,35000,2986,606.0,Pensioner,2026-06-15,Under Review,Counsellor
+EDU1018,Pranav Sharma,18,Andhra Pradesh,INS005,Eastern Tech University,CRS001,MBA,Management,883659,788072,110000,25041,673.0,Business,2026-07-30,Approved,Partner Referral
+EDU1019,Charan Naidu,24,Telangana,INS006,Metro College of Engineering,CRS005,BBA,Management,485019,370933,45000,50000,616.0,Business,2026-06-15,Approved,Campus Drive
+EDU1020,Arjun Gupta,23,Tamil Nadu,INS006,Metro College of Engineering,CRS002,MCA,Computer Applications,546488,421652,90000,28089,724.0,Self-Employed,2026-06-23,Under Review,Partner Referral
+EDU1021,Sneha Menon,19,Telangana,INS007,Summit University,CRS002,MCA,Computer Applications,673078,446505,45000,0,750.0,Business,2026-06-21,Approved,Counsellor
+EDU1022,Lakshmi Gupta,22,Tamil Nadu,INS001,Aurora Institute of Technology,CRS003,B.Tech,Engineering,826244,690261,90000,16638,686.0,Salaried,2026-06-03,Submitted,Website
+EDU1023,Nikhil Rao,19,Karnataka,INS012,Central Institute of Data Science,CRS005,BBA,Management,511239,246435,65000,8635,659.0,Self-Employed,2026-06-11,Submitted,Counsellor
+EDU1024,Pooja Pillai,24,Delhi,INS003,Riverdale University,CRS005,BBA,Management,533984,434169,180000,14823,583.0,Self-Employed,2026-08-10,Approved,Campus Drive
+EDU1025,Manish Das,28,Rajasthan,INS004,Deccan Institute of Management,CRS009,MBBS,Medical,1724660,1471109,65000,10290,761.0,Pensioner,2026-06-26,Rejected,Institution Referral
+EDU1026,Keerthi Sharma,22,Tamil Nadu,INS006,Metro College of Engineering,CRS005,BBA,Management,475476,382914,45000,8068,654.0,Self-Employed,2026-07-02,Under Review,Institution Referral
+EDU1027,Aditya Nair,20,Andhra Pradesh,INS003,Riverdale University,CRS008,PG Diploma AI,Data Science,398179,250252,140000,25696,675.0,Salaried,2026-06-10,Under Review,Partner Referral
+EDU1028,Ishita Bhat,19,Tamil Nadu,INS009,Pioneer Business School,CRS008,PG Diploma AI,Data Science,407659,326011,75000,12540,755.0,Self-Employed,2026-06-10,Approved,Campus Drive
+EDU1029,Nikhil Joshi,18,Tamil Nadu,INS011,Coastal School of Technology,CRS001,MBA,Management,842604,487505,110000,21772,726.0,Salaried,2026-07-31,Approved,Institution Referral
+EDU1030,Meghana Naidu,19,Telangana,INS012,Central Institute of Data Science,CRS010,M.Pharm,Medical,800805,690185,180000,23751,690.0,Salaried,2026-07-26,Approved,Institution Referral
+EDU1031,Tejas Kumar,27,Tamil Nadu,INS006,Metro College of Engineering,CRS002,MCA,Computer Applications,739842,423138,45000,14164,602.0,Self-Employed,2026-07-22,Under Review,Website
+EDU1032,Meghana Mehta,22,Maharashtra,INS012,Central Inst. of Data Science,CRS008,PG Diploma AI,Data Science,387708,240197,90000,13499,774.0,Pensioner,2026-08-08,Approved,Website
+EDU1033,Vamshi Kulkarni,20,Andhra Pradesh,INS008,Greenfield Institute,CRS001,MBA,Management,958537,757902,65000,7853,739.0,Salaried,2026-06-10,Approved,Campus Drive
+EDU1034,Yash Nair,21,Karnataka,INS011,Coastal School of Technology,CRS002,MCA,Computer Applications,616239,507853,65000,24904,663.0,Pensioner,2026-06-02,Rejected,Counsellor
+EDU1035,Manish Reddy,20,Karnataka,INS001,Aurora Institute of Technology,CRS006,BCA,Computer Applications,511782,397592,75000,18696,707.0,Pensioner,2026-08-01,Approved,Institution Referral
+EDU1036,Tejas Naidu,21,Maharashtra,INS003,Riverdale University,CRS006,BCA,Computer Applications,545442,397824,65000,4567,724.0,Pensioner,2026-07-20,Approved,Campus Drive
+EDU1037,Karthik Iyer,19,Telangana,INS002,National School of Business,CRS004,M.Tech,Engineering,644799,345954,35000,4815,732.0,Salaried,2026-08-02,Approved,Partner Referral
+EDU1038,Nikhil Menon,21,Karnataka,INS008,Greenfield Institute,CRS001,MBA,Management,796084,530602,90000,16499,620.0,Salaried,2026-06-08,Submitted,Campus Drive
+EDU1039,Ananya Pillai,22,Andhra Pradesh,INS011,Coastal School of Technology,CRS008,PG Diploma AI,Data Science,509218,237553,55000,12436,683.0,Self-Employed,2026-06-11,Approved,Counsellor
+EDU1040,Rahul Nair,21,Telangana,INS011,Coastal School of Technology,CRS001,MBA,Management,871165,721602,45000,8844,598.0,Salaried,2026-06-16,Under Review,Counsellor
+EDU1041,Ishita Iyer,27,Kerala,INS005,Eastern Tech University,CRS003,B.Tech,Engineering,951224,688115,55000,751,681.0,Self-Employed,2026-08-06,Under Review,Partner Referral
+EDU1042,Sai Gupta,18,Rajasthan,INS010,Horizon University,CRS002,MCA,Computer Applications,648883,583193,140000,26826,751.0,Business,2026-07-21,Under Review,Institution Referral
+EDU1043,Rahul Kumar,22,Andhra Pradesh,INS005,Eastern Tech University,CRS004,M.Tech,Engineering,735872,506594,90000,14662,647.0,Self-Employed,2026-06-02,Rejected,Campus Drive
+EDU1044,Lakshmi Rao,23,Tamil Nadu,INS012,Central Institute of Data Science,CRS003,B.Tech,Engineering,909972,689810,45000,4414,695.0,Business,2026-07-04,Rejected,Partner Referral
+EDU1045,Pranav Gupta,19,Telangana,INS006,Metro College of Engineering,CRS001,MBA,Management,883186,732004,45000,5959,802.0,Business,2026-06-21,Approved,Institution Referral
+EDU1046,Vidya Kumar,22,Karnataka,INS006,Metro College of Engineering,CRS007,MS Data Science,Data Science,994712,616348,75000,8438,768.0,Business,2026-06-18,Approved,Partner Referral
+EDU1047,Diya Verma,30,Rajasthan,INS001,Aurora Institute of Technology,CRS008,PG Diploma AI,Data Science,418252,353583,75000,16377,733.0,Business,2026-06-27,Under Review,Institution Referral
+EDU1048,Varun Verma,23,Telangana,INS009,Pioneer Business School,CRS006,BCA,Computer Applications,619653,307541,75000,320,649.0,Salaried,2026-06-12,Under Review,Partner Referral
+EDU1049,Ishita Mehta,22,Rajasthan,INS007,Summit University,CRS005,BBA,Management,428851,282142,140000,28335,797.0,Pensioner,2026-06-17,Approved,Campus Drive
+EDU1050,Vidya Patel,20,Telangana,INS007,Summit University,CRS001,MBA,Management,773466,372048,45000,6316,659.0,Business,2026-06-02,Submitted,Campus Drive
+EDU1051,Bhavya Reddy,27,Maharashtra,INS004,Deccan Institute of Management,CRS003,B.Tech,Engineering,934222,468437,65000,3610,785.0,Business,2026-08-10,Approved,Institution Referral
+EDU1052,Harsha Kumar,22,Kerala,INS002,National School of Business,CRS001,MBA,Management,660644,529323,55000,7017,656.0,Pensioner,2026-07-16,Rejected,Campus Drive
+EDU1053,Harsha Mehta,22,Karnataka,INS012,Central Institute of Data Science,CRS004,M.Tech,Engineering,711092,385634,55000,9755,690.0,Pensioner,2026-06-20,Approved,Institution Referral
+EDU1054,Keerthi Joshi,23,Tamil Nadu,INS004,Deccan Institute of Management,CRS007,MS Data Science,Data Science,908699,761311,140000,16488,608.0,Business,2026-06-23,Under Review,Website
+EDU1055,Aditya Bhat,20,Tamil Nadu,INS004,Deccan Institute of Management,CRS001,MBA,Management,856714,454354,90000,13675,691.0,Self-Employed,2026-06-14,Under Review,Counsellor
+EDU1056,Tejas Nair,27,Tamil Nadu,INS010,Horizon University,CRS008,PG Diploma AI,Data Science,441748,345074,110000,28232,788.0,Salaried,2026-07-15,Approved,Website
+EDU1057,Vamshi Rao,24,Maharashtra,INS011,Coastal School of Technology,CRS003,B.Tech,Engineering,773750,678427,90000,23197,664.0,Business,2026-07-22,Under Review,Campus Drive
+EDU1058,Varun Kulkarni,22,Kerala,INS011,Coastal School of Technology,CRS001,MBA,Management,847894,725167,90000,20084,761.0,Salaried,2026-07-22,Under Review,Institution Referral
+EDU1059,Ishita Reddy,22,Andhra Pradesh,INS003,Riverdale University,CRS004,M.Tech,Engineering,649667,506404,55000,9465,640.0,Pensioner,2026-07-04,Rejected,Partner Referral
+EDU1060,Pooja Kumar,23,Delhi,INS012,Central Institute of Data Science,CRS003,B.Tech,Engineering,1065453,880794,65000,13948,714.0,Self-Employed,2026-07-11,Rejected,Partner Referral
+EDU1061,Aarav Menon,21,Tamil Nadu,INS010,Horizon University,CRS003,B.Tech,Engineering,916991,806820,45000,6371,715.0,Business,2026-06-06,Under Review,Counsellor
+EDU1062,Yash Singh,29,Kerala,INS004,Deccan Institute of Management,CRS003,B.Tech,Engineering,1065489,481989,45000,5959,764.0,Salaried,2026-06-09,Under Review,Partner Referral
+EDU1063,Meghana Singh,20,Delhi,INS006,Metro College of Engineering,CRS006,BCA,Computer Applications,546912,300552,180000,38586,592.0,Business,2026-08-04,Under Review,Campus Drive
+EDU1064,Sanjana Mishra,23,Karnataka,INS001,Aurora Institute of Technology,CRS009,MBBS,Medical,1829907,868651,75000,15540,820.0,Business,2026-06-17,Approved,Counsellor
+EDU1065,Karthik Gupta,27,Tamil Nadu,INS011,Coastal School of Technology,CRS005,MBA ,Management,541273,459372,75000,13993,603.0,Pensioner,2026-08-10,Under Review,Campus Drive
+EDU1066,Nandini Iyer,21,Rajasthan,INS007,Summit University,CRS010,M.Pharm,Medical,868190,555303,90000,14171,672.0,Self-Employed,2026-07-12,Approved,Institution Referral
+EDU1067,Sai Pillai,26,Kerala,INS004,Deccan Institute of Management,CRS003,B.Tech,Engineering,853304,609983,180000,35906,752.0,Salaried,2026-07-07,Under Review,Website
+EDU1068,Diya Patel,24,Telangana,INS009,Pioneer Business School,CRS006,BCA,Computer Applications,590836,327205,55000,7455,659.0,Salaried,2026-07-10,Under Review,Website
+EDU1069,Sneha Rao,22,Rajasthan,INS008,Greenfield Institute,CRS001,MBA,Management,904121,469467,110000,13594,768.0,Pensioner,2026-07-31,Approved,Campus Drive
+EDU1070,Manish Bhat,24,Delhi,INS012,Central Institute of Data Science,CRS005,BBA,Management,471855,393285,35000,5738,732.0,Self-Employed,2026-06-25,Approved,Website
+EDU1071,Vamshi Kumar,23,Delhi,INS009,Pioneer Business School,CRS002,MCA,Computer Applications,649146,432502,75000,10563,777.0,Self-Employed,2026-06-01,Approved,Website
+EDU1072,Pranav Nair,24,Andhra Pradesh,INS002,National School of Business,CRS002,MCA,Computer Applications,704296,582210,90000,27228,765.0,Pensioner,2026-08-06,Approved,Website
+EDU1073,Pranav Pillai,19,Kerala,INS004,Deccan Institute of Management,CRS008,PG Diploma AI,Data Science,420812,225938,45000,10449,756.0,Pensioner,2026-07-30,Approved,Campus Drive
+EDU1074,Yash Kulkarni,28,Rajasthan,INS009,Pioneer Business School,CRS001,MBA,Management,721306,569229,110000,14302,733.0,Self-Employed,2026-08-04,Approved,Counsellor
+EDU1075,Harsha Verma,25,Rajasthan,INS009,Pioneer Business School,CRS007,MS Data Science,Data Science,905422,671287,75000,9725,820.0,Self-Employed,2026-07-28,Approved,Partner Referral
+EDU1076,Karthik Nair,25,Maharashtra,INS012,Central Institute of Data Science,CRS007,MS Data Science,Data Science,937189,781985,75000,18762,664.0,Business,2026-07-27,Submitted,Partner Referral
+EDU1077,Bhavya Nair,20,Delhi,INS008,Greenfield Institute,CRS002,MCA,Computer Applications,632128,373194,65000,16599,800.0,Self-Employed,2026-08-09,Submitted,Website
+EDU1078,Keerthi Kulkarni,29,Rajasthan,INS010,Horizon University,CRS006,BCA,Computer Applications,587844,269254,110000,17540,733.0,Pensioner,2026-06-09,Approved,Institution Referral
+EDU1079,Manish Chowdhury,23,Telangana,INS012,Central Institute of Data Science,CRS004,M.Tech,Engineering,749881,483644,180000,30686,588.0,Pensioner,2026-06-27,Under Review,Counsellor
+EDU1080,Karthik Mishra,22,Delhi,INS007,Summit University,CRS010,M.Pharm,Medical,724614,373658,45000,8271,678.0,Self-Employed,2026-06-01,Approved,Counsellor
+EDU1081,Nikhil Sharma,20,Delhi,INS004,Deccan Institute of Management,CRS003,B.Tech,Engineering,887111,452180,75000,19433,652.0,Business,2026-06-29,Under Review,Counsellor
+EDU1082,Yash Patel,25,Telangana,INS008,Greenfield Institute,CRS001,MBA,Management,892385,723525,65000,16640,707.0,Pensioner,2026-06-22,Under Review,Campus Drive
+EDU1083,Meghana Patel,24,Rajasthan,INS011,Coastal School of Technology,CRS006,BCA,Computer Applications,504610,406394,90000,37548,665.0,Self-Employed,2026-06-04,Submitted,Institution Referral
+EDU1084,Diya Naidu,24,Kerala,INS004,Deccan Institute of Management,CRS010,M.Pharm,Medical,793815,700423,65000,17062,724.0,Business,2026-07-04,Rejected,Counsellor
+EDU1085,Varun Joshi,24,Maharashtra,INS010,Horizon University,CRS004,M.Tech,Engineering,690332,396645,75000,22359,757.0,Salaried,2026-07-06,Approved,Counsellor
+EDU1086,Aditya Das,23,Tamil Nadu,INS004,Deccan Institute of Management,CRS006,BCA,Computer Applications,610724,514130,65000,12923,560.0,Salaried,2026-06-03,Approved,Institution Referral
+EDU1087,Diya Sharma,25,Karnataka,INS011,Coastal School of Technology,CRS003,B.Tech,Engineering,787975,380649,55000,681,682.0,Self-Employed,2026-06-04,Approved,Website
+EDU1088,Rahul Iyer,26,Rajasthan,INS002,National School of Business,CRS002,MCA,Computer Applications,663217,457673,110000,35562,669.0,Business,2026-07-31,Rejected,Partner Referral
+EDU1089,Siddharth Kumar,21,Karnataka,INS008,Greenfield Institute,CRS005,BBA,Management,475045,232700,45000,14276,665.0,Business,2026-06-22,Under Review,Institution Referral
+EDU1090,Rahul Mishra,20,Delhi,INS001,Aurora Institute of Technology,CRS006,BCA,Computer Applications,583962,295825,45000,9919,652.0,Self-Employed,2026-06-04,Under Review,Institution Referral
+EDU1091,Sneha Gupta,27,Andhra Pradesh,INS008,Greenfield Institute,CRS002,MCA,Computer Applications,684760,574564,90000,17627,666.0,Salaried,2026-07-02,Submitted,Partner Referral
+EDU1092,Lakshmi Rao,23,Kerala,INS003,Riverdale University,CRS009,MBBS,Medical,1762616,1389985,45000,6923,,Salaried,2026-08-08,Rejected,Counsellor
+EDU1093,Lakshmi Naidu,21,Karnataka,INS004,Deccan Institute of Management,CRS009,MBBS,Medical,1941061,1160311,90000,24635,613.0,Pensioner,2026-08-02,Submitted,Website
+EDU1094,Ishita Pillai,18,Rajasthan,INS009,Pioneer Business School,CRS005,BBA,Management,581134,360828,110000,39960,560.0,Pensioner,2026-08-06,Under Review,Counsellor
+EDU1095,Harsha Rao,21,Maharashtra,INS009,Pioneer Business School,CRS003,B.Tech,Engineering,880516,751539,45000,8565,782.0,Pensioner,2026-07-05,Approved,Website
+EDU1096,Sanjana Mishra,21,Kerala,INS001,Aurora Institute of Technology,CRS004,M.Tech,Engineering,721282,425620,75000,19144,635.0,Salaried,2026-07-30,Under Review,Counsellor
+EDU1097,Diya Das,24,Maharashtra,INS003,Riverdale University,CRS002,MCA,Computer Applications,625995,430011,45000,17265,774.0,Business,2026-07-12,Under Review,Partner Referral
+EDU1098,Pooja Iyer,23,Andhra Pradesh,INS004,Deccan Institute of Management,CRS002,MCA,Computer Applications,671478,550730,65000,13150,656.0,Self-Employed,2026-07-06,Under Review,Counsellor
+EDU1099,Harsha Bhat,23,Rajasthan,INS006,Metro College of Engineering,CRS005,BBA,Management,522349,295439,90000,21002,622.0,Pensioner,2026-08-02,Under Review,Institution Referral
+EDU1100,Manish Nair,23,Maharashtra,INS011,Coastal School of Technology,CRS004,M.Tech,Engineering,613226,525832,90000,6768,752.0,Business,2026-06-12,Approved,Counsellor
+EDU1101,Meghana Kulkarni,21,Kerala,INS003,Riverdale University,CRS003,B.Tech,Engineering,916832,775672,90000,1845,598.0,Business,2026-08-10,Under Review,Counsellor
+EDU1102,Harsha Kumar,19,Tamil Nadu,INS010,Horizon University,CRS010,M.Pharm,Medical,823939,403685,180000,42399,785.0,Business,2026-07-05,Approved,Institution Referral
+EDU1103,Shreya Mehta,24,Tamil Nadu,INS012,Central Institute of Data Science,CRS003,B.Tech,Engineering,962302,538548,90000,14496,749.0,Self-Employed,2026-08-08,Under Review,Counsellor
+EDU1104,Sneha Menon,21,Maharashtra,INS007,Summit University,CRS005,BBA,Management,484144,296325,45000,10649,705.0,Salaried,2026-07-06,Approved,Website
+EDU1105,Charan Gupta,21,Telangana,INS005,Eastern Tech University,CRS004,M.Tech,Engineering,675439,570805,110000,24802,775.0,Self-Employed,2026-07-08,Approved,Partner Referral
+EDU1106,Pranav Gupta,19,Karnataka,INS009,Pioneer Business School,CRS003,B.Tech,Engineering,943170,668541,75000,3913,759.0,Pensioner,2026-06-06,Under Review,Institution Referral
+EDU1107,Nikhil Bhat,27,Rajasthan,INS010,Horizon University,CRS007,MS Data Science,Data Science,829824,403281,90000,17941,702.0,Business,2026-06-02,Under Review,Website
+EDU1108,Vamshi Bhat,20,Andhra Pradesh,INS001,Aurora Institute of Technology,CRS002,MCA,Computer Applications,599584,326947,75000,21745,741.0,Salaried,2026-06-07,Under Review,Counsellor
+EDU1109,Sai Reddy,19,Karnataka,INS006,Metro College of Engineering,CRS002,MCA,Computer Applications,672720,395434,75000,0,777.0,Self-Employed,2026-08-02,Submitted,Campus Drive
+EDU1110,Harsha Kumar,23,Delhi,INS001,Aurora Institute of Technology,CRS004,M.Tech,Engineering,752321,383842,65000,18811,725.0,Self-Employed,2026-07-09,Submitted,Campus Drive
+EDU1111,Nandini Gupta,23,Delhi,INS007,Summit University,CRS005,BBA,Management,532644,359375,55000,8185,614.0,Business,2026-07-19,Under Review,Campus Drive
+EDU1112,Siddharth Kumar,24,Tamil Nadu,INS004,Deccan Institute of Management,CRS005,BBA,Management,522153,252924,55000,10571,694.0,Self-Employed,2026-06-08,Under Review,Partner Referral
+EDU1113,Charan Kulkarni,19,Andhra Pradesh,INS002,National School of Business,CRS004,M.Tech,Engineering,666157,311168,90000,24070,695.0,Self-Employed,2026-06-11,Approved,Institution Referral
+EDU1114,Riya Bhat,18,Maharashtra,INS001,Aurora Institute of Technology,CRS004,M.Tech,Engineering,732220,361920,90000,22533,649.0,Salaried,2026-07-23,Under Review,Website
+EDU1115,Shreya Naidu,24,Andhra Pradesh,INS004,Deccan Institute of Management,CRS010,M.Pharm,Medical,841067,579188,35000,10375,779.0,Self-Employed,2026-07-07,Rejected,Partner Referral
+EDU1116,Pranav Nair,26,Karnataka,INS005,Eastern Tech University,CRS006,BCA,Computer Applications,629167,407531,75000,11839,685.0,Business,2026-06-26,Approved,Website
+EDU1117,Tejas Gupta,30,Maharashtra,INS003,Riverdale University,CRS002,MCA,Computer Applications,675530,540019,90000,17503,747.0,Pensioner,2026-06-10,Submitted,Institution Referral
+EDU1118,Shreya Mishra,19,Maharashtra,INS006,Metro College of Engineering,CRS001,MBA,Management,761815,602735,90000,17956,644.0,Pensioner,2026-07-30,Approved,Counsellor
+EDU1119,Vidya Joshi,23,Kerala,INS007,Summit University,CRS005,BBA,Management,513554,302954,90000,19318,753.0,Business,2026-06-11,Approved,Institution Referral
+EDU1120,Sanjana Chowdhury,22,Telangana,INS008,Greenfield Institute,CRS005,BBA,Management,547481,413496,90000,24998,693.0,Business,2026-06-12,Approved,Campus Drive
+EDU1121,Charan Bhat,23,Rajasthan,INS007,Summit University,CRS003,B.Tech,Engineering,790152,637959,45000,6113,782.0,Business,2026-06-06,Approved,Website 
+EDU1122,Nikhil Rao,23,Rajasthan,INS001,Aurora Institute of Technology,CRS005,BBA,Management,602327,494674,75000,9604,772.0,Business,2026-07-26,Under Review,Counsellor
+EDU1123,Arjun Mehta,25,Kerala,INS009,Pioneer Business School,CRS004,M.Tech,Engineering,642645,473166,110000,17806,820.0,Pensioner,2026-07-13,Approved,Counsellor
+EDU1124,Manish Kulkarni,20,Telangana,INS007,Summit University,CRS005,BBA,Management,461622,264454,75000,12614,721.0,Pensioner,2026-07-07,Approved,Institution Referral
+EDU1125,Arjun Mishra,24,Telangana,INS003,Riverdale University,CRS008,PG Diploma AI,Data Science,440127,380789,75000,7775,635.0,Pensioner,2026-07-11,Rejected,Counsellor
+EDU1126,Lakshmi Pillai,26,Rajasthan,INS012,Central Institute of Data Science,CRS003,B.Tech,Engineering,831340,426195,75000,7340,585.0,Pensioner,2026-06-07,Approved,Institution Referral
+EDU1127,Bhavya Gupta,23,Rajasthan,INS003,Riverdale University,CRS006,BCA,Computer Applications,584947,315370,75000,16298,618.0,Pensioner,2026-06-27,Approved,Institution Referral
+EDU1128,Riya Nair,22,Karnataka,INS012,Central Institute of Data Science,CRS001,MBA,Management,847576,709474,90000,13557,711.0,Business,2026-06-04,Approved,Campus Drive
+EDU1129,Ananya Nair,22,Andhra Pradesh,INS007,Summit University,CRS004,M.Tech,Engineering,799112,555737,45000,13130,632.0,Pensioner,2026-06-02,Under Review,Institution Referral
+EDU1130,Shreya Gupta,24,Maharashtra,INS001,Aurora Institute of Technology,CRS007,MS Data Science,Data Science,954332,803318,55000,9759,720.0,Pensioner,2026-06-20,Under Review,Counsellor
+EDU1131,Pranav Patel,24,Delhi,INS007,Summit University,CRS001,MBA,Management,857702,496791,110000,36285,606.0,Self-Employed,2026-07-31,Under Review,Campus Drive
+EDU1132,Bhavya Rao,20,Maharashtra,INS012,Central Institute of Data Science,CRS009,MBBS,Medical,1955526,1123658,180000,26587,678.0,Pensioner,2026-08-05,Rejected,Partner Referral
+EDU1133,Aarav Gupta,23,Maharashtra,INS012,Central Institute of Data Science,CRS006,BCA,Computer Applications,503460,390852,65000,7218,697.0,Pensioner,2026-08-04,Approved,Website
+EDU1134,Lakshmi Singh,20,Telengana,INS006,Metro College of Engineering,CRS001,MBA,Management,874721,437217,90000,23998,613.0,Pensioner,2026-07-28,Rejected,Partner Referral
+EDU1135,Harsha Chowdhury,25,Delhi,INS012,Central Institute of Data Science,CRS008,PG Diploma AI,Data Science,466104,301092,75000,18274,621.0,Self-Employed,2026-06-25,Approved,Counsellor
+EDU1136,Nikhil Mishra,20,Delhi,INS010,Horizon University,CRS001,MBA,Management,892069,430603,45000,6738,756.0,Self-Employed,2026-06-06,Approved,Counsellor
+EDU1137,Rahul Singh,20,Andhra Pradesh,INS002,National School of Business,CRS001,MBA,Management,908429,408870,55000,3032,722.0,Pensioner,2026-06-05,Submitted,Institution Referral
+EDU1138,Aarav Patel,23,Delhi,INS010,Horizon University,CRS001,MBA,Management,752893,618665,90000,31009,765.0,Self-Employed,2026-08-07,Approved,Institution Referral
+EDU1139,Ishita Singh,18,Delhi,INS003,Riverdale University,CRS006,BCA,Computer Applications,586518,283527,55000,12784,664.0,Salaried,2026-07-31,Rejected,Partner Referral
+EDU1140,Keerthi Bhat,18,Telangana,INS011,Coastal School of Technology,CRS008,PG Diploma AI,Data Science,504998,359691,180000,49131,704.0,Salaried,2026-08-08,Under Review,Website
+EDU1141,Siddharth Rao,26,Delhi,INS007,Summit University,CRS005,BBA,Management,391870,232232,65000,14358,744.0,Salaried,2026-07-07,Approved,Institution Referral
+EDU1142,Karthik Sharma,24,Telangana,INS001,Aurora Institute of Technology,CRS005,BBA,Management,554946,371508,90000,20170,708.0,Business,2026-07-27,Approved,Institution Referral
+EDU1143,Meghana Patel,22,Tamil Nadu,INS008,Greenfield Institute,CRS006,BCA,Computer Applications,439920,539920,75000,0,600.0,Pensioner,2026-07-08,Under Review,Campus Drive
+EDU1144,Ananya Pillai,19,Delhi,INS003,Riverdale University,CRS005,BBA,Management,442002,300870,65000,15190,689.0,Self-Employed,2026-06-24,Approved,Counsellor
+EDU1145,Sai Verma,24,Rajasthan,INS004,Deccan Institute of Management,CRS001,MBA,Management,822860,516393,65000,16023,657.0,Business,2026-06-19,Under Review,Institution Referral
+EDU1146,Sanjana Kulkarni,22,Karnataka,INS002,National School of Business,CRS003,B.Tech,Engineering,886933,640106,90000,9783,682.0,Salaried,2026-07-30,Approved,Counsellor
+EDU1147,Karthik Joshi,19,Maharashtra,INS006,Metro College of Engineering,CRS001,MBA,Management,971181,719550,140000,25822,630.0,Pensioner,2026-07-15,Approved,Partner Referral
+EDU1148,Vamshi Bhat,19,Andhra Pradesh,INS001,Aurora Institute of Technology,CRS001,MBA,Management,1023184,837993,90000,27417,560.0,Self-Employed,2026-06-26,Under Review,Counsellor
+EDU1149,Shreya Gupta,21,Telangana,INS011,Coastal School of Technology,CRS008,PG Diploma AI,Data Science,423409,293905,110000,7394,689.0,Pensioner,2026-07-16,Approved,Partner Referral
+EDU1150,Sanjana Reddy,18,Rajasthan,INS005,Eastern Tech University,CRS005,BBA,Management,518599,272309,65000,9463,637.0,Business,2026-06-02,Under Review,Website

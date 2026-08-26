@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dhaniti | Education Lending Intelligence</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;--line:#e5e7eb;--accent:#3157d5;--good:#14804a;--warn:#b7791f;--bad:#c53030}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header{background:#111827;color:#fff;padding:20px 28px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:20px;margin:0}header span{font-size:12px;color:#cbd5e1}
+main{padding:24px;max-width:1500px;margin:auto}.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 2px 8px #00000008}.kpi .label{font-size:12px;color:var(--muted)}.kpi .value{font-size:26px;font-weight:750;margin-top:8px}.charts{grid-template-columns:repeat(3,1fr)}.chart{height:300px}.chart canvas{max-height:260px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar input,.toolbar select,.toolbar button,.modal input,.modal select{padding:10px 12px;border:1px solid #d7dce5;border-radius:9px;background:#fff}.toolbar input{min-width:240px}.toolbar button,.primary{background:var(--accent);color:#fff;border:0;cursor:pointer}
+.tablewrap{overflow:auto;margin-top:14px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:11px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}tr:hover{background:#f8fafc}.pill{padding:4px 8px;border-radius:999px;font-size:11px;font-weight:700}.Approved{background:#dcfce7;color:#166534}.Rejected{background:#fee2e2;color:#991b1b}.Under-Review{background:#fef3c7;color:#92400e}.Submitted{background:#e0e7ff;color:#3730a3}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin:0 0 12px}.insights{grid-template-columns:repeat(3,1fr);margin-top:20px}.insight strong{display:block;margin-bottom:6px}.small{font-size:12px;color:var(--muted);line-height:1.5}
+.modal{display:none;position:fixed;inset:0;background:#11182788;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:#fff;border-radius:16px;max-width:760px;width:100%;padding:22px;max-height:90vh;overflow:auto}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid label{font-size:12px;color:var(--muted)}.formgrid input,.formgrid select{width:100%;margin-top:5px}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
+@media(max-width:1000px){.kpis{grid-template-columns:repeat(2,1fr)}.charts,.insights{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div><h1>Dhaniti Education Lending Intelligence</h1><span>Technical Internship Assignment · Synthetic data</span></div><button class="primary" onclick="openCreate()">+ New Application</button></header>
+<main>
+<section class="grid kpis">
+<div class="card kpi"><div class="label">Total Applications</div><div id="total" class="value">—</div></div>
+<div class="card kpi"><div class="label">Approved</div><div id="approved" class="value">—</div></div>
+<div class="card kpi"><div class="label">Under Review</div><div id="under_review" class="value">—</div></div>
+<div class="card kpi"><div class="label">Rejected</div><div id="rejected" class="value">—</div></div>
+<div class="card kpi"><div class="label">Loan Amount Requested</div><div id="loan_total" class="value">—</div></div>
+</section>
+<section class="grid charts">
+<div class="card chart"><div class="section-title"><b>Status Mix</b></div><canvas id="statusChart"></canvas></div>
+<div class="card chart"><div class="section-title"><b>Applications by Course</b></div><canvas id="courseChart"></canvas></div>
+<div class="card chart"><div class="section-title"><b>Applications by Institution</b></div><canvas id="instChart"></canvas></div>
+<div class="card chart"><div class="section-title"><b>Monthly Pipeline</b></div><canvas id="monthChart"></canvas></div>
+<div class="card chart"><div class="section-title"><b>Credit Score Distribution</b></div><canvas id="creditChart"></canvas></div>
+</section>
+
+<section class="card" style="margin-top:20px">
+<div class="section-title"><h2 style="font-size:17px;margin:0">Application Table</h2></div>
+<div class="toolbar">
+<input id="q" placeholder="Search application ID or student name">
+<select id="status"><option value="">All statuses</option></select>
+<select id="course"><option value="">All courses</option></select>
+<select id="institution"><option value="">All institutions</option></select>
+<select id="sort"><option value="application_date">Date</option><option value="loan_amount_requested_inr">Loan amount</option><option value="credit_score">Credit score</option><option value="student_name">Student</option></select>
+<select id="direction"><option value="desc">Descending</option><option value="asc">Ascending</option></select>
+</div>
+<div class="tablewrap"><table><thead><tr><th>ID</th><th>Student</th><th>Course</th><th>Institution</th><th>Loan</th><th>Credit</th><th>Date</th><th>Status</th><th></th></tr></thead><tbody id="tbody"></tbody></table></div>
+</section>
+
+<section class="grid insights">
+<div class="card insight"><strong>1. Approval volume is 42%</strong><div class="small">63 of 150 applications are approved (63 ÷ 150). This gives the team a quick view of current conversion through the prototype pipeline.</div></div>
+<div class="card insight"><strong>2. ₹7.49 Cr is requested</strong><div class="small">Total requested loan amount is ₹74,935,752. Average request is about ₹4.996 lakh, useful for understanding pipeline value.</div></div>
+<div class="card insight"><strong>3. Institution Referral leads channels</strong><div class="small">Institution Referral has 34 applications and 18 approvals (52.9%). It is the largest high-performing acquisition channel by approval count.</div></div>
+<div class="card insight"><strong>4. MBA is the largest course segment</strong><div class="small">MBA has 26 applications, followed by B.Tech with 23. Course mix can guide attention to the largest application segments.</div></div>
+<div class="card insight"><strong>5. Data quality needs normalization</strong><div class="small">The source contains one missing credit score, inconsistent master names for institution/course, and a whitespace variant in an application channel. The loader normalizes these without inventing missing credit data.</div></div>
+</section>
+</main>
+
+<div class="modal" id="modal"><div class="modalbox"><div class="section-title"><h2 id="modalTitle" style="margin:0">Application</h2><button onclick="closeModal()">✕</button></div><div id="modalBody"></div></div></div>
+
+<script>
+const INR=n=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(n);
+const $=id=>document.getElementById(id);
+let charts={};
+async function get(url){const r=await fetch(url);if(!r.ok)throw new Error('Request failed: '+r.status);return r.json()}
+async function init(){
+  try{
+    const m=await get('/api/masters');
+    const statusEl=$('status'), courseEl=$('course'), institutionEl=$('institution');
+    m.statuses.forEach(s=>statusEl.add(new Option(s,s)));
+    m.courses.forEach(x=>courseEl.add(new Option(x.course_name,x.course_name)));
+    m.institutions.forEach(x=>institutionEl.add(new Option(x.institution_name,x.institution_name)));
+    $('q').addEventListener('input',debouncedLoadApps);
+    ['status','course','institution','sort','direction'].forEach(id=>$(id).addEventListener('change',loadApps));
+    await refresh();
+  }catch(err){console.error(err);alert('Could not load the dashboard. Please restart the Flask app and refresh the page.')}
+}
+let searchTimer;
+function debouncedLoadApps(){clearTimeout(searchTimer);searchTimer=setTimeout(loadApps,200)}
+async function refresh(){await dashboard();await loadApps()}
+function draw(id,type,labels,data,opts={}){if(charts[id])charts[id].destroy();charts[id]=new Chart($(id),{type,data:{labels,datasets:[{data,borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:type==='doughnut'}},...opts}})}
+async function dashboard(){
+ const d=await get('/api/dashboard');
+ $('total').textContent=d.total;$('approved').textContent=d.approved;$('under_review').textContent=d.under_review;$('rejected').textContent=d.rejected;$('loan_total').textContent=INR(d.loan_total);
+ draw('statusChart','doughnut',d.status.map(x=>x.status),d.status.map(x=>x.count));
+ draw('courseChart','bar',d.course.map(x=>x.name),d.course.map(x=>x.count),{scales:{y:{beginAtZero:true}}});
+ draw('instChart','bar',d.institution.map(x=>x.name),d.institution.map(x=>x.count),{indexAxis:'y',scales:{x:{beginAtZero:true}}});
+ draw('monthChart','line',d.monthly.map(x=>x.month),d.monthly.map(x=>x.count),{scales:{y:{beginAtZero:true}}});
+ draw('creditChart','bar',d.credit.map(x=>x.bucket),d.credit.map(x=>x.count),{scales:{y:{beginAtZero:true}}});
+}
+async function loadApps(){
+  const q=$('q').value.trim(), status=$('status').value, course=$('course').value, institution=$('institution').value, sort=$('sort').value, direction=$('direction').value;
+  const p=new URLSearchParams({q,status,course,institution,sort,direction});
+  const body=$('tbody');
+  body.innerHTML='<tr><td colspan="9" style="text-align:center;color:#667085;padding:22px">Loading applications…</td></tr>';
+  try{
+    const data=await get('/api/applications?'+p.toString());
+    if(!data.length){body.innerHTML='<tr><td colspan="9" style="text-align:center;color:#667085;padding:22px">No applications match the selected filters.</td></tr>';return}
+    body.innerHTML=data.map(x=>`<tr><td><b>${x.application_id}</b></td><td>${x.student_name}</td><td>${x.course_name}</td><td>${x.institution_name}</td><td>${INR(x.loan_amount_requested_inr)}</td><td>${x.credit_score??'Missing'}</td><td>${x.application_date}</td><td><span class="pill ${x.application_status.replace(' ','-')}">${x.application_status}</span></td><td><button onclick="view('${x.application_id}')">View</button></td></tr>`).join('');
+  }catch(err){console.error(err);body.innerHTML='<tr><td colspan="9" style="text-align:center;color:#c53030;padding:22px">Unable to load applications. Check that the Flask server is running.</td></tr>'}
+}
+async function view(id){
+ const x=await get('/api/applications/'+encodeURIComponent(id));
+ $('modalTitle').textContent=x.application_id+' · '+x.student_name;
+ $('modalBody').innerHTML=`<div class="formgrid">${[['Student state',x.student_state],['Age',x.age],['Course',x.course_name],['Domain',x.course_domain],['Institution',x.institution_name],['Loan requested',INR(x.loan_amount_requested_inr)],['Course fee',INR(x.course_fee_inr)],['Parent income',INR(x.parent_monthly_income_inr)],['Obligations',INR(x.existing_monthly_obligations_inr)],['Credit score',x.credit_score??'Missing'],['Employment',x.employment_type],['Channel',x.application_channel],['Date',x.application_date]].map(a=>`<div><label>${a[0]}</label><div style="margin-top:5px;font-weight:600">${a[1]}</div></div>`).join('')}</div><hr><label>Status</label><select id="detailStatus">${['Submitted','Under Review','Approved','Rejected'].map(s=>`<option value="${s}" ${s===x.application_status?'selected':''}>${s}</option>`).join('')}</select><div class="actions"><button onclick="closeModal()">Close</button><button class="primary" onclick="updateStatus('${x.application_id}')">Update status</button></div>`;
+ $('modal').classList.add('open');
+}
+async function updateStatus(id){const r=await fetch('/api/applications/'+encodeURIComponent(id)+'/status',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({status:$('detailStatus').value})});if(r.ok){closeModal();await refresh()}else alert((await r.json()).error)}
+function closeModal(){$('modal').classList.remove('open')}
+async function openCreate(){
+ const m=await get('/api/masters');
+ $('modalTitle').textContent='Create Application';
+ $('modalBody').innerHTML=`<form id="createForm"><div class="formgrid">
+ <div><label>Application ID</label><input name="application_id" placeholder="EDU2001" required></div>
+ <div><label>Student name</label><input name="student_name" required></div>
+ <div><label>Age</label><input type="number" name="age" min="18" max="100" required></div>
+ <div><label>State</label><input name="student_state" required></div>
+ <div><label>Institution</label><select name="institution_id">${m.institutions.map(x=>`<option value="${x.institution_id}">${x.institution_name}</option>`).join('')}</select></div>
+ <div><label>Course</label><select name="course_id">${m.courses.map(x=>`<option value="${x.course_id}">${x.course_name}</option>`).join('')}</select></div>
+ <div><label>Course fee (INR)</label><input type="number" name="course_fee_inr" required></div>
+ <div><label>Loan requested (INR)</label><input type="number" name="loan_amount_requested_inr" required></div>
+ <div><label>Parent monthly income</label><input type="number" name="parent_monthly_income_inr" required></div>
+ <div><label>Existing obligations</label><input type="number" name="existing_monthly_obligations_inr" required></div>
+ <div><label>Credit score (optional)</label><input type="number" name="credit_score"></div>
+ <div><label>Employment</label><select name="employment_type"><option>Salaried</option><option>Self-Employed</option><option>Business</option><option>Pensioner</option></select></div>
+ <div><label>Application date</label><input type="date" name="application_date" value="${new Date().toISOString().slice(0,10)}" required></div>
+ <div><label>Channel</label><select name="application_channel"><option>Website</option><option>Institution Referral</option><option>Counsellor</option><option>Campus Drive</option><option>Partner Referral</option></select></div>
+ </div><div class="actions"><button type="button" onclick="closeModal()">Cancel</button><button class="primary">Create</button></div></form>`;
+ $('modal').classList.add('open');
+ $('createForm').onsubmit=async e=>{e.preventDefault();const d=Object.fromEntries(new FormData($('createForm')));for(const k of ['age','course_fee_inr','loan_amount_requested_inr','parent_monthly_income_inr','existing_monthly_obligations_inr','credit_score']){if(d[k]==='')delete d[k];else if(d[k]!==undefined)d[k]=Number(d[k])}const r=await fetch('/api/applications',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});if(r.ok){closeModal();await refresh()}else alert((await r.json()).error||'Could not create')}
+}
+
+init();
+</script>
+</body></html>

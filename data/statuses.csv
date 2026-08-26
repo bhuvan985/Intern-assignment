@@ -1,0 +1,5 @@
+status,description
+Submitted,Application received; review not started.
+Under Review,Application is currently being evaluated.
+Approved,Application passed the prototype's illustrative assessment logic.
+Rejected,Application did not pass the prototype's illustrative assessment logic.
